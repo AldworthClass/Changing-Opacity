@@ -11,7 +11,8 @@ namespace Changing_Opacity
             InitializeComponent();
         }
 
-
+        // This method will allo the user to set the opacity of a Bitmap
+        // The value of alpha needs to be an integer from 0 (invisible) to 255 (fully opaque)
         static Bitmap SetAlpha(Bitmap bmpIn, int alpha)
         {
             Bitmap bmpOut = new Bitmap(bmpIn.Width, bmpIn.Height);
